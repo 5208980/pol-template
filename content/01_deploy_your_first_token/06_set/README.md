@@ -1,67 +1,33 @@
-# Interacting with Your Contract: Setting the Name and Retrieving the Transaction Hash
+# Interacting with Your Smart Contract
 
-Now that your contract is deployed on the Open Campus Codex network, let's interact with it by setting the name to "Vitalik" and retrieving the transaction hash of this call. The transaction hash is a unique identifier for the transaction on the blockchain, allowing you to track and verify the transaction.
+This section builds on the previous one, where we deployed a smart contract to the Open Campus Codex network. Proof of Learn (POL) provides quests that guide users through interacting with smart contracts, ensuring they gain an interactive understanding of how smart contracts work.
 
-### Step-by-Step Guide to Setting the Name and Getting the Transaction Hash
+To start, you can find the interaction quest using the [quest.config.json template](https://github.com/5208980/pol-template/blob/master/quest.config.json).
 
-### Step 9: Set the Name to "Vitalik"
+In this guide, we'll use the `SimpleContract` you deployed in the previous section. Specifically, we'll interact with the `set` method, allowing you to change the `name` variable in the contract on the Open Campus Codex chain.
 
-2. **Find Your Deployed Contract:** Under "Deployed Contracts," expand your deployed contract to see its functions.
-3. **Set the Name:** In the `setName` function input box, type `"Vitalik"` (including the quotes). Click the "transact" button to send the transaction.
-4. **Confirm in MetaMask:** MetaMask will prompt you to confirm the transaction. Review the details and click "Confirm."
+## Interacting with the Contract
 
-### Step 10: Retrieve the Transaction Hash
+Now that your contract is deployed on the Open Campus Codex network, let's interact with it by setting the `name` to `"Vitalik"` and retrieving the transaction hash. The transaction hash is a unique identifier for your transaction on the blockchain, allowing you to track and verify the transaction.
 
-Once the transaction is confirmed will display the transaction details, including the transaction hash. Here’s how you can retrieve it:
+## Locate and Load the Contract
 
-1. **Transaction Receipt:** After confirming the transaction in MetaMask, will show a transaction receipt in the "Deploy & Run Transactions" tab.
-2. **Copy the Transaction Hash:** Look for the field labeled "transaction hash" in the receipt. This is a unique identifier for your transaction. Copy this hash for future reference.
+1. Use the deployed contract address to load the contract in your preferred blockchain explorer or development tool.
+2. Ensure that you have the contract's ABI (Application Binary Interface) available for interacting with its functions.
 
-### Example of Setting the Name and Retrieving the Transaction Hash
+## Call the `set` Method
 
-Let's illustrate this process with an example. Suppose your contract looks like this:
+1. Locate the `set` function in your contract interface.
+2. In the input field, type `"Vitalik"` (including the quotes).
+3. Click the "Transact" button to send the transaction.
+4. Confirm the transaction with MetaMask or your connected wallet, then wait for the transaction confirmation.
 
-```solidity
-// SPDX-License-Identifier: MIT
-pragma solidity ^0.8.20;
+## Check the Contract's State
 
-contract SimpleContract {
-    string value;
-    string name;
+1. Once the transaction is confirmed, you can check the state of the `name` variable.
+2. Call the `name` function in your contract to retrieve its current value.
+3. If the result is `"Vitalik"`, congratulations! You've successfully interacted with your contract.
 
-    // Getter for the 'value' variable
-    function getValue() public view returns (string memory) {
-        return value;
-    }
+## Submit the Transaction to POL
 
-    // Setter for the 'value' variable
-    function setValue(string memory _value) public {
-        value = _value;
-    }
-
-    // Getter for the 'name' variable
-    function getName() public view returns (string memory) {
-        return name;
-    }
-
-    // Setter for the 'name' variable
-    function setName(string memory _name) public {
-        name = _name;
-    }
-}
-```
-
-After deploying this contract, follow the steps above to set the name to "Vitalik" and get the transaction hash.
-
-### What Just Happened?
-
-By setting the name to "Vitalik" and retrieving the transaction hash, you've completed a full interaction with your Solidity contract on the Open Campus Codex network. Here's a breakdown of what occurred:
-
-- **Transaction Creation:** When you called the `setName` function and entered "Vitalik", a transaction was created to update the `name` state variable in your contract.
-- **MetaMask Confirmation:** MetaMask prompted you to confirm the transaction, ensuring you agreed to the gas fees and changes being made.
-- **Transaction Execution:** Upon confirmation, the transaction was executed on the Open Campus Codex network, updating the state variable.
-- **Transaction Hash:** The transaction hash was generated, serving as a unique identifier for this specific transaction. You can use this hash to track and verify the transaction on the blockchain.
-
-### Conclusion
-
-You've now successfully set the name to "Vitalik" in your Solidity contract and retrieved the transaction hash. This hands-on interaction helps you understand how to update state variables and track transactions on the blockchain.
+To validate this part of the quest, submit the transaction hash to the Proof of Learn (POL) platform. This confirms that you've successfully interacted with the smart contract.
