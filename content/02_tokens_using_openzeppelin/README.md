@@ -16,8 +16,8 @@ pragma solidity ^0.8.20;
 
 import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 
-contract MyToken is ERC20 {
-    constructor() ERC20("MyToken", "MTK") {}
+contract TokenPoken is ERC20 {
+    constructor() ERC20("TokenPoken", "TP") {}
 }
 ```
 
@@ -25,7 +25,7 @@ contract MyToken is ERC20 {
 
 1. **Pragma Statement:** `pragma solidity ^0.8.20;` specifies the version of Solidity to be used.
 2. **Import Statement:** `import "@openzeppelin/contracts/token/ERC20/ERC20.sol";` imports the ERC20 contract from OpenZeppelin's library.
-3. **Contract Definition:** `contract MyToken is ERC20` declares a new contract that inherits from the ERC20 contract.
+3. **Contract Definition:** `contract TokenPoken is ERC20` declares a new contract that inherits from the ERC20 contract.
 4. **Constructor:** The constructor sets the token's name to "MyToken" and the symbol to "MTK" by calling the ERC20 constructor.
 
 By inheriting from OpenZeppelin's ERC20 contract, we automatically get all the standard functionalities of an ERC20 token, such as transferring tokens, checking balances, and approving allowances.
@@ -53,7 +53,7 @@ contract TokenPoken is ERC20 {
 
 ### Step 3: Compile the Contract
 
-2. **Select the Compiler Version:** Select version 0.8.20 from the "Compiler" dropdown menu.
+2. **Select the Compiler Version:** Select version 0.8.23 from the "Compiler" dropdown menu.
 3. **Compile the Contract:** Click the "Compile TokenPoken.sol" button. If there are no errors, you should see a green checkmark indicating successful compilation.
 
 ### Step 4: Deploy the Contract

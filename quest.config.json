@@ -11,7 +11,7 @@
         {
             "path": "01_deploy_your_first_token/05_deploy",
             "type": "deployment",
-            "bytecode": "0xe262851fe269095d04cfc131586943c625257ac09e0e03432c41d46f2ce768b1"
+            "bytecode": "0x86d1b8039b28cf6e8bfbc8ec91d3e4cda65348f689bdc101b1fe39a9f590dcba"
         },
         {
             "path": "01_deploy_your_first_token/06_set",
@@ -28,7 +28,7 @@
                             "type": "string"
                         }
                     ],
-                    "name": "setName",
+                    "name": "set",
                     "outputs": [],
                     "stateMutability": "nonpayable",
                     "type": "function"
@@ -38,7 +38,7 @@
         {
             "path": "02_tokens_using_openzeppelin",
             "type": "deployment",
-            "bytecode": "0xc19c199ecbb2962ed09e68629e4f9cc8be7dd9bd65fb63ba355d62335d981dea"
+            "bytecode": "0x9234ce139d8e3304417bfdff11206b94cc74f5a16e0f6489db07ad42226658d2"
         }
     ]
 }
