@@ -1,70 +1,43 @@
 # Deploy a Smart Contract
 
-This section provides a template that allows creators to configure a deployment quest using the [quest.config.json template](https://github.com/5208980/pol-template/blob/master/quest.config.json). With this template, users can submit deployment transactions on specific chains.
+### Introduction
 
-In the configuration example below, we demonstrate deploying a contract on the Open Campus Codex chain. The contract used in this example is a simple Solidity contract:
+Having covered the fundamentals of Solidity, including contract structure, state variables, function definitions, and state mutability, it's now time to deploy the `SimpleContract` contract! 🚀
 
-```solidity
-// SPDX-License-Identifier: MIT
-pragma solidity ^0.8.20;
+### Adding the Open Campus Codex Network
 
-contract SimpleContract {
-    string public name;
-
-    function set(string memory _name) public {
-        name = _name;
-    }
-}
-```
-
-This section could include similar contract examples or allow users to customize their own deployments based on the setup provided.
-Here's a clearer and more detailed continuation of your instructions:
-## Setting Up MetaMask
-
-MetaMask is a popular browser extension wallet that allows you to interact with various blockchain networks. If you haven't installed MetaMask yet, you can download it from [MetaMask's official website](https://metamask.io/). Once installed, you'll be able to manage your accounts, store your private keys securely, and interact with decentralized applications (dApps).
-
-## Adding the Open Campus Codex Network
-
-To deploy your contract to the Open Campus Codex network, you'll need to add this custom network to MetaMask. Follow these steps:
+To deploy your contract to the Open Campus Codex network, you'll need to add this custom network to MetaMask. Follow the steps below and use the details provided in the table:
 
 1. Open MetaMask and click on the network dropdown at the top.
 2. Select "Add Network" and fill in the following details:
 
-   - **Network Name:** Open Campus Codex  
-   - **New RPC URL:** `https://open-campus-codex-sepolia.drpc.org`  
-   - **Chain ID:** `656476`  
-   - **Currency Symbol:** `EDU`  
-   - **Block Explorer URL:** `https://opencampus-codex.blockscout.com/`
+| **Field**            | **Details**                                  |
+|----------------------|----------------------------------------------|
+| **Network Name**      | Open Campus Codex                            |
+| **New RPC URL**       | `https://open-campus-codex-sepolia.drpc.org` |
+| **Chain ID**          | `656476`                                     |
+| **Currency Symbol**   | `EDU`                                        |
+| **Block Explorer URL**| `https://opencampus-codex.blockscout.com/`   |
 
-3. Click "Save."
+Once you've added these details, you'll be connected to the Open Campus Codex network and ready to deploy your contract! 🎉
 
-Once saved, MetaMask is now configured to use the Open Campus Codex network. You should see the network name at the top of the MetaMask window.
-
-## Deploying and Interacting with Your Contract on Open Campus Codex
-
-With MetaMask connected to the Open Campus Codex network, you're ready to deploy and interact with your Solidity contract.
-
-### Step 1: Compile the Contract
+### Compile the Contract
 
 - Set your Solidity compiler version to **0.8.23**.
 - Compile the `SimpleContract` from the earlier example.
 
-### Step 2: Deploy the Contract
+### Deploy the Contract
 
 - After compilation, deploy the `SimpleContract` to the Open Campus Codex network. MetaMask will prompt you to approve the transaction for deployment.
 
 Once the transaction is confirmed, your contract is successfully deployed!
 
-### Step 3: Interact with the Contract
+Congratulations! You've successfully configured MetaMask for the Open Campus Codex network, deployed a Solidity contract, and now can interacted with it. 🎉
 
-- You can now interact with your deployed contract using MetaMask. This includes calling the `set` function to change the `name` variable or querying the contract to view its current state.
+### ❗Submit the Deployment to Proof of Learn
 
-Congratulations! You've successfully configured MetaMask for the Open Campus Codex network, deployed your Solidity contract, and interacted with it. 
+To complete this quest on POL, submit your deployed contract transaction to the Proof of Learn (POL) platform. This confirms that you've successfully deployed the contract. You can earn yourself a 🏆**POL POAP**.
+ 
+### Conclusion
 
-### Final Step: Submit the Deployment to POL
-
-To complete this quest, submit your deployed contract transaction to the Proof of Learn (POL) platform. This confirms that you've successfully deployed the contract.
-
-## Next Steps: Interacting with Your Contract
-
-In the next section, we'll guide you through interacting with your deployed contract, including how to change the variable `name` and update the contract state using its functions.
+Now that your contract is deployed, it's time to dive deeper! In the next section, we'll explore how to interact with your deployed contract, update the `name` variable, and modify the contract state using its functions. Stay tuned⚡
