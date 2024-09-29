@@ -1,3 +1,5 @@
+# Functions
+
 ### Introduction
 
 Now that we have a contract set up with some state variables, let's dive into how we can use functions to interact with them

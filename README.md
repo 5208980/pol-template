@@ -1,17 +1,32 @@
-# Proof of Learn Template
+<div align="center">
+<h1>Proof of Learn Content Template</h1>
+<a href="https://docs.solide0x.tech/docs/pol/contribution">
+  Read in Depth Docs
+</a>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="https://pol.solide0x.tech/q/5208980/pol-template">
+  View in POL
+</a>
+</div>
 
-This is a template and layout for Proof of Learn content. Use this as a base line to add content and resources to your POL then submit a PR to [TODO](#). Please note that the content and resource in this repository is AI generated and information and resource are done to provide placeholder to what a Proof of Learn template should be.
+<br /><br />
 
-Notes:
-- You can add custom folders to your resources, just make sure they do not beggin with a number, `{number}_`
-    - See `you_can_add_custom_folder` or `assets` folders
-- Resources can be a single topic or split into sub modules,
-    - `01_deploy_your_first_token` has 6 submodules
-    - `02_tokens_using_openzeppelin` is a single module
-- quest and configurations for the resources, NFT metadata and requirements can be found in `quest.config.json`
-    - See Docs (Coming soon) for `quest.config.json` schema
+This template serves as a foundational layout for creating content and resources for your Proof of Learn (POL) project. Use this as a baseline and submit a Issue to [Polposal](https://github.com/solide-project/polposal). The information and resources provided are placeholders to illustrate what a Proof of Learn resource should encompass.
 
-- If you resources wants to mint NFT for complete a modules or submodule, be sure to add it to quest.config.json
-- This will ensure learners will deploy or transaction on specified chains for a given module
-- To help validate, you can visit `/utility`
-    - TODO: Add scripts to validate here.
+**Notes:**
+
+- 📁 **Custom Folders:** You can add custom folders to your resources, but ensure they do not begin with a number (e.g., `{number}_`).  
+  - See examples like `you_can_add_custom_folder` or `assets` folders.
+- 📚 **Resource Structure:** Resources can cover a single topic or be divided into sub-modules.  
+  - For instance, `01_deploy_your_first_token` contains 6 sub-modules, while `02_tokens_using_openzeppelin` is a single module.
+- 📝 **Quest Configurations:** All quests, configurations for resources, NFT metadata, and requirements can be found in `quest.config.json`.  
+  - Refer to the Docs (Coming soon) for the `quest.config.json` schema.
+- 🎟️ **POAP Information:** To include a POAP badge, create a dedicated folder containing the badge image and its metadata, which will be stored on IPFS.
+
+### POL POAP
+
+To include a POAP, the resource **must** have a `quest.config.json` file containing one or more quests. This enables users to submit and earn the POAP NFT. You can find more documentation on quests [here](https://docs.solide0x.tech/docs/pol/contribution).
+
+### Contributing to POL
+
+Once you've finished writing and creating a quest for the resource, you can submit an issue to the [Repository](https://github.com/solide-project/polposal). Here, it will undergo review by the community and the POL team before being added on-chain and made available on the POL Platform.

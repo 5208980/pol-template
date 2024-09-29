@@ -1,3 +1,5 @@
+# State Mutability
+
 ### Introduction
 
 State mutability in Solidity specifies how a function interacts with the contract's state and the blockchain. Understanding state mutability is crucial for optimizing gas usage and ensuring that functions behave as intended. 

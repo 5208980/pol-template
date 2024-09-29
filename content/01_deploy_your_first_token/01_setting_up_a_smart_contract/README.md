@@ -1,3 +1,5 @@
+# Setting up a Smart Contract
+
 ### Introduction 
 
 In this section, we'll go over the basic structure of a smart contract, that allows automate agreements and transactions on the blockchain, paving the way for innovative decentralized applications!

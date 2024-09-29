@@ -1,4 +1,4 @@
-### Leveling Up: Deploying an ERC20 Token
+# Leveling Up: Deploying an ERC20 Token
 
 Now that you've successfully deployed and interacted with your first smart contract, it’s time to take things up a notch! In this next part, we’ll guide you through deploying your own ERC20 token, using OpenZeppelin’s battle-tested ERC20🪙 implementation. Let’s get started on creating your very own token on the Open Campus Codex network
 

@@ -1,3 +1,5 @@
+# Basic Solidity Types
+
 ### Introduction
 
 Let’s dive into the fundamental building blocks of smart contracts by exploring basic contract variables that define their state and behavior!
