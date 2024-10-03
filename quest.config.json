@@ -38,7 +38,7 @@
         {
             "path": "02_tokens_using_openzeppelin",
             "type": "deployment",
-            "bytecode": "0x9234ce139d8e3304417bfdff11206b94cc74f5a16e0f6489db07ad42226658d2"
+            "bytecode": "0xf0b5b9d80e29e3b887dd14563800dc6f61c2a2a3b846df6d4b69ebee03ddec46"
         }
     ]
 }
