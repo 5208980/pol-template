@@ -12,7 +12,7 @@ Now that your SimpleContract is deployed on the Open Campus Codex network, let's
 
 #### Call the set Method
 
-First, locate the set function in your contract interface. In the input field, type **"Vitalik"** (with quotes) and click "Transact." MetaMask will prompt you to confirm the transaction—approve it and wait for the transaction to be processed.
+First, locate the set function in your contract interface. In the input field, type **Vitalik** and click "Transact." MetaMask will prompt you to confirm the transaction—approve it and wait for the transaction to be processed.
 
 #### Verify the Contract's State
 
