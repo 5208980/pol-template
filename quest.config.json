@@ -11,7 +11,7 @@
         {
             "path": "01_deploy_your_first_token/05_deploy",
             "type": "deployment",
-            "bytecode": "0x86d1b8039b28cf6e8bfbc8ec91d3e4cda65348f689bdc101b1fe39a9f590dcba"
+            "bytecode": "0xa891761af84e22afaeaa82cf4cd09a7fa0eb2f88107861e42d055cb403bfb3fc"
         },
         {
             "path": "01_deploy_your_first_token/06_set",
@@ -38,7 +38,7 @@
         {
             "path": "02_tokens_using_openzeppelin",
             "type": "deployment",
-            "bytecode": "0x9234ce139d8e3304417bfdff11206b94cc74f5a16e0f6489db07ad42226658d2"
+            "bytecode": "0xc256a39b34c66c9dd356af7ac12af8f7b7756ee5f117f3e5a0d904222d3afa6f"
         }
     ]
 }
